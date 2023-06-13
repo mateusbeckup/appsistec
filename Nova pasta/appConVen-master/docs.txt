@@ -1,0 +1,6 @@
+firebase:
+
+usuário sistec.mobile@gmail.com 
+Senha: M@nagers1
+
+Cuidado que é base em produção do firebase

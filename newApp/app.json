@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "newApp",
+    "slug": "newApp",
+    "android": {
+      "package": "com.mateus007.newApp"
+    }
+  }
+}

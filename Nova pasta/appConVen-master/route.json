@@ -1,0 +1,2332 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2023-06-12T11:44:05.817Z",
+    "__export_source": "insomnia.desktop.app:v2023.2.2",
+    "resources": [
+      {
+        "_id": "req_c490d7c118464cb4af4f4e09cc8ac1d9",
+        "parentId": "fld_59c8a3f85cd64001bf83269c1d4227b5",
+        "modified": 1618602064196,
+        "created": 1618600795790,
+        "url": "{{ _.baseURL }}/authenticate/session",
+        "name": "Session",
+        "description": "",
+        "method": "POST",
+        "body": {},
+        "parameters": [
+          {
+            "name": "username",
+            "value": "{{ _.user }}",
+            "description": "",
+            "id": "pair_4042c3722ec747ceae668803e0662090"
+          },
+          {
+            "name": "password",
+            "value": "{{ _.password }}",
+            "description": "",
+            "id": "pair_3a1203c3f60a420c97e87586d7f4204e"
+          }
+        ],
+        "headers": [],
+        "authentication": {},
+        "metaSortKey": -1618600795790,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "fld_59c8a3f85cd64001bf83269c1d4227b5",
+        "parentId": "wrk_98e220ad58684d84a5f997e378329d17",
+        "modified": 1618600781369,
+        "created": 1618600781369,
+        "name": "Authenticate",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1618600781369,
+        "_type": "request_group"
+      },
+      {
+        "_id": "wrk_98e220ad58684d84a5f997e378329d17",
+        "parentId": null,
+        "modified": 1599173990451,
+        "created": 1599173990451,
+        "name": "Conven ",
+        "description": "",
+        "scope": "collection",
+        "_type": "workspace"
+      },
+      {
+        "_id": "req_01807a650cbe422e88266dbcd3e87bbf",
+        "parentId": "fld_b0cfb578edb04b23bb354e56286bf801",
+        "modified": 1664223057204,
+        "created": 1605526639520,
+        "url": "http://177.140.240.235:9500/convenserver/condicoespagamento",
+        "name": "Condições de Pagamento",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "name": "If-None-Match",
+            "value": "195B86BEEB91E024888C3574D0F09F2C",
+            "description": "",
+            "id": "pair_e6a2c2e3e17d49e6b91098758296a7eb",
+            "disabled": true
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "OLIVIR",
+          "password": "2379"
+        },
+        "metaSortKey": -1605526639520,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "fld_b0cfb578edb04b23bb354e56286bf801",
+        "parentId": "wrk_98e220ad58684d84a5f997e378329d17",
+        "modified": 1616088614563,
+        "created": 1605526419239,
+        "name": "Cadastros Auxiliares",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1616087764669,
+        "_type": "request_group"
+      },
+      {
+        "_id": "req_9cad291c49104e3c9543cc7aba0b174b",
+        "parentId": "fld_b0cfb578edb04b23bb354e56286bf801",
+        "modified": 1664223187507,
+        "created": 1599177077009,
+        "url": "{{ baseURL }}/convenserver/cidades",
+        "name": "Cidades",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "description": "",
+            "disabled": true,
+            "id": "pair_433c2eff714740e6a72e62724d4da17f",
+            "name": "If-None-Match",
+            "value": "\t9289DFE10B838CCA582D91744D937304"
+          }
+        ],
+        "authentication": {
+          "disabled": false,
+          "password": "{{ password }}",
+          "type": "basic",
+          "username": "{{ user }}"
+        },
+        "metaSortKey": -1605526448302,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_6c490545f5ce49ae8a7f340a7474c50d",
+        "parentId": "fld_b0cfb578edb04b23bb354e56286bf801",
+        "modified": 1616692933064,
+        "created": 1605526448252,
+        "url": "{{ baseURL }}/convenserver/localcobranca",
+        "name": "Local de Cobrança",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "name": "If-None-Match",
+            "value": "C68DA2A7D7667F7028D8CB758D1203A9",
+            "description": "",
+            "id": "pair_8fab8efce3964d2f9df09d46856b293c",
+            "disabled": true
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ user }}",
+          "password": "{{ password }}"
+        },
+        "metaSortKey": -1605526448252,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_ab308194c1814c668369dde6995d75a2",
+        "parentId": "fld_b0cfb578edb04b23bb354e56286bf801",
+        "modified": 1605815366878,
+        "created": 1599180215977,
+        "url": "{{ baseURL }}/convenserver/pedidos/tiposmovimentos",
+        "name": "Tipos de Movimentos",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "description": "",
+            "disabled": true,
+            "id": "pair_c8cdb85be60049deb45105b6490eb311",
+            "name": "If-None-Match",
+            "value": "50D41ECD6E28AF7138FE7F37A2A1A77B"
+          },
+          {
+            "description": "",
+            "id": "pair_362c6bd15c94407ca08be68477e6abb0",
+            "name": "",
+            "value": ""
+          },
+          {
+            "description": "",
+            "id": "pair_185c76241ba04805bb71aaa919777609",
+            "name": "",
+            "value": ""
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ user }}",
+          "password": "{{ password }}"
+        },
+        "metaSortKey": -1605526448202,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_85686f63ef4a4d07a6e04c20bbd7ba1c",
+        "parentId": "fld_f1639eb9043a466182ed0593a62836fe",
+        "modified": 1616087772025,
+        "created": 1599178687185,
+        "url": "{{ baseURL }}/convenserver/filiais",
+        "name": "Filiais",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "description": "",
+            "disabled": false,
+            "id": "pair_9067488f2be44471bc18aad9e393222b",
+            "name": "If-None-Match",
+            "value": "4A5FF7BAA9CBFDF97B4B6D90673810E1"
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ user }}",
+          "password": "{{ password }}"
+        },
+        "metaSortKey": -1605526448277,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "fld_f1639eb9043a466182ed0593a62836fe",
+        "parentId": "wrk_98e220ad58684d84a5f997e378329d17",
+        "modified": 1616087764619,
+        "created": 1616087764619,
+        "name": "Filial",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1616087764619,
+        "_type": "request_group"
+      },
+      {
+        "_id": "req_636c973a802f4f78a8ec23d12559d114",
+        "parentId": "fld_f1639eb9043a466182ed0593a62836fe",
+        "modified": 1616087776818,
+        "created": 1616076316997,
+        "url": "{{ baseURL }}/convenserver/filiais/parametros/",
+        "name": "Filiais Parametros",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "description": "",
+            "disabled": false,
+            "id": "pair_9067488f2be44471bc18aad9e393222b",
+            "name": "If-None-Match",
+            "value": "4A5FF7BAA9CBFDF97B4B6D90673810E1"
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ user }}",
+          "password": "{{ password }}"
+        },
+        "metaSortKey": -1605526448227,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_70879783a2a54bd884ce54df39b819a8",
+        "parentId": "fld_f1639eb9043a466182ed0593a62836fe",
+        "modified": 1616087779672,
+        "created": 1606044439113,
+        "url": "{{ baseURL }}/convenserver/filiais/logotipo/{{ empresa }}/{{ filial }}",
+        "name": "Filiais Logotipo",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "description": "",
+            "disabled": false,
+            "id": "pair_9067488f2be44471bc18aad9e393222b",
+            "name": "If-None-Match",
+            "value": "4A5FF7BAA9CBFDF97B4B6D90673810E1"
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ user }}",
+          "password": "{{ password }}"
+        },
+        "metaSortKey": -1605526448177,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_acd9d8f7ac1b49eea3f1f694a39802bb",
+        "parentId": "fld_b8ceaba0f1324e9ca2cdf85d51263420",
+        "modified": 1684351701257,
+        "created": 1605526558296,
+        "url": "http://45.163.149.7:9500/convenserver/vendedores/MARCO",
+        "name": "Vendedor",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "id": "pair_c7517bf49fcb434980369d8a369e9b77",
+            "name": "usuario",
+            "value": "MIGUEL",
+            "description": "",
+            "disabled": true
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "MARCO",
+          "password": "123"
+        },
+        "metaSortKey": -1606622864554.5,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "fld_b8ceaba0f1324e9ca2cdf85d51263420",
+        "parentId": "wrk_98e220ad58684d84a5f997e378329d17",
+        "modified": 1607719258764,
+        "created": 1607719250145,
+        "name": "Vendedor",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1605526419289,
+        "_type": "request_group"
+      },
+      {
+        "_id": "req_9c2d9d822eb7445facf32b63c73a6337",
+        "parentId": "fld_b8ceaba0f1324e9ca2cdf85d51263420",
+        "modified": 1614953306469,
+        "created": 1607719280957,
+        "url": "{{ _.baseURL }}/convenserver/vendedores/{{ _.user }}",
+        "name": "Vendedor",
+        "description": "",
+        "method": "POST",
+        "body": {
+          "mimeType": "application/json",
+          "text": {
+            "vend_push": "pushnotification",
+            "vend_imei": "imei"
+          }
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "pair_5e4b5b0f9f1c4bf59b19280833f1989d"
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "useISO88591": false,
+          "disabled": false,
+          "username": "{{ _.user }}",
+          "password": "{{ _.password }}"
+        },
+        "metaSortKey": -1606622864504.5,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_86fcebaade2b45d8a9cf4a6c0bded82a",
+        "parentId": "fld_d4845053c66a4c9181f87869a4d9a5ce",
+        "modified": 1615921003634,
+        "created": 1614950885236,
+        "url": "{{ baseURL }}/convenserver/clientes/contatos/{{ _.vendedor }}",
+        "name": "Listar",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "description": "",
+            "disabled": true,
+            "id": "pair_d81b7bfdfcd9469b979ed54ac5c29eba",
+            "name": "If-None-Match",
+            "value": "9A15A5EC3D5B00A37D497483DDE5512E"
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ _.user }}",
+          "password": "{{ _.password }}"
+        },
+        "metaSortKey": -1600372987097.75,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "fld_d4845053c66a4c9181f87869a4d9a5ce",
+        "parentId": "wrk_98e220ad58684d84a5f997e378329d17",
+        "modified": 1616084379967,
+        "created": 1614950872522,
+        "name": "Contatos",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1605526419264,
+        "_type": "request_group"
+      },
+      {
+        "_id": "req_4c394be5d92d4e9ca6c4c346fb12db2c",
+        "parentId": "fld_d4845053c66a4c9181f87869a4d9a5ce",
+        "modified": 1616759490391,
+        "created": 1614951795463,
+        "url": "{{ baseURL }}/convenserver/clientes/contatos",
+        "name": "Gravar",
+        "description": "",
+        "method": "POST",
+        "body": {
+          "mimeType": "application/json",
+          "text": [
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 113,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELINHO ALTERADO DE NOVO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "2222222222",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 100,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "NORMA",
+              "CFC_CARGO": "",
+              "CFC_FONE": "333333333",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 114,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "00000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 1460,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 123,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 100,
+              "CFC_NUMERO": 2,
+              "CFC_CONTATO": "FISCAL",
+              "CFC_CARGO": "",
+              "CFC_FONE": "3333333333",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "fiscal@supermercadovidal.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 3136,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "celiojoo@yahoo.com.br",
+              "CFC_CARGO": "",
+              "CFC_FONE": "333333333",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "33",
+              "CFC_EMAIL": "CELIOJOO@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "S"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 114,
+              "CFC_NUMERO": 2,
+              "CFC_CONTATO": "ADILSON",
+              "CFC_CARGO": "COMPRADOR",
+              "CFC_FONE": "000000000",
+              "CFC_RAMAL": "33999024640",
+              "CFC_CELULAR": "0",
+              "CFC_EMAIL": "nfe@paxa.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 113,
+              "CFC_NUMERO": 2,
+              "CFC_CONTATO": "PAXA",
+              "CFC_CARGO": "",
+              "CFC_FONE": "3333333333",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "33",
+              "CFC_EMAIL": "nfe@paxa.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 3136,
+              "CFC_NUMERO": 2,
+              "CFC_CONTATO": "PAXA",
+              "CFC_CARGO": "",
+              "CFC_FONE": "3333333333",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "33",
+              "CFC_EMAIL": "nfe@paxa.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 359,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "3333333333",
+              "CFC_RAMAL": "33333333333",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 1460,
+              "CFC_NUMERO": 2,
+              "CFC_CONTATO": "ADEGMAR",
+              "CFC_CARGO": "",
+              "CFC_FONE": "3333333333",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "33",
+              "CFC_EMAIL": "adgmar@uai.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 159,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "3333333333",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "33",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 468,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "3333333333",
+              "CFC_RAMAL": "33333333333",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 3587,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 3757,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELINHO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "S"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 3947,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELINHO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 3136,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "celiojoo@yahoo.com.br",
+              "CFC_CARGO": "",
+              "CFC_FONE": "333333333",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "33",
+              "CFC_EMAIL": "CELIOJOO@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "S"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4183,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4183,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4216,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELINHO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "Celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 3865,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 3117,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELINHO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "S"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 162,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 162,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 3577,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "S"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 3577,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "S"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 115,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "S"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 115,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "S"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4291,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4291,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4294,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELINHO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "S"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4294,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELINHO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "S"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4295,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "S"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4295,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "S"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4341,
+              "CFC_NUMERO": 2,
+              "CFC_CONTATO": "CAMILA",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CAMILACOELHO@MIRABRAS.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4341,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4341,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 131,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "VALDENIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "3299953662",
+              "CFC_RAMAL": "32999536621",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 131,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "VALDENIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "3299953662",
+              "CFC_RAMAL": "32999536621",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 3586,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELINHO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 3586,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELINHO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4538,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELINHO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4538,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELINHO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 248,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 248,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 320,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "KAROL",
+              "CFC_CARGO": "PROPRIETARIA",
+              "CFC_FONE": "3333317418",
+              "CFC_RAMAL": "33999065787",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "LINGUICABARBOSA@HOTMAIL.COM",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 320,
+              "CFC_NUMERO": 2,
+              "CFC_CONTATO": "ELTON",
+              "CFC_CARGO": "PROPRIETARIO",
+              "CFC_FONE": "3333317418",
+              "CFC_RAMAL": "33999739315",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "LINGUICABARBOSA@HOTMAIL.COM",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 4955,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELINHO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "0000000000",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 5194,
+              "CFC_NUMERO": 2,
+              "CFC_CONTATO": "ANDERSON RAMOS",
+              "CFC_CARGO": "TESTE",
+              "CFC_FONE": "",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "ANDERSON.RAMUG@GMAIL.COM",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 2,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 114,
+              "CFC_NUMERO": 2,
+              "CFC_CONTATO": "ADILSON",
+              "CFC_CARGO": "COMPRADOR",
+              "CFC_FONE": "000000000",
+              "CFC_RAMAL": "33999024640",
+              "CFC_CELULAR": "0",
+              "CFC_EMAIL": "nfe@paxa.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 5194,
+              "CFC_NUMERO": 3,
+              "CFC_CONTATO": "teste 2",
+              "CFC_CARGO": "",
+              "CFC_FONE": "",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "ererewr",
+              "CFC_NFE": "N",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 5194,
+              "CFC_NUMERO": 4,
+              "CFC_CONTATO": "fdfdfdsfsdf",
+              "CFC_CARGO": "",
+              "CFC_FONE": "",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "sdfsfsdfsdfsd",
+              "CFC_NFE": "N",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 320,
+              "CFC_NUMERO": 2,
+              "CFC_CONTATO": "ELTON",
+              "CFC_CARGO": "PROPRIETARIO",
+              "CFC_FONE": "3333317418",
+              "CFC_RAMAL": "33999739315",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "LINGUICABARBOSA@HOTMAIL.COM",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 5028,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELINHO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "",
+              "CFC_RAMAL": "33988122576",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "CELIOJOO@YAHOO.COM.BR",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 5194,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELIO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 5195,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "CELINHO",
+              "CFC_CARGO": "",
+              "CFC_FONE": "",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "celiojoo@yahoo.com.br",
+              "CFC_NFE": "S",
+              "CFC_NFSE": "N"
+            },
+            {
+              "CFC_EMPRESA": 1,
+              "CFC_FILIAL": 1,
+              "CFC_CLIFOR": 168,
+              "CFC_NUMERO": 1,
+              "CFC_CONTATO": "123",
+              "CFC_CARGO": "",
+              "CFC_FONE": "",
+              "CFC_RAMAL": "",
+              "CFC_CELULAR": "",
+              "CFC_EMAIL": "123",
+              "CFC_NFE": "N",
+              "CFC_NFSE": "N"
+            }
+          ]
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "description": "",
+            "disabled": true,
+            "id": "pair_d81b7bfdfcd9469b979ed54ac5c29eba",
+            "name": "If-None-Match",
+            "value": "9A15A5EC3D5B00A37D497483DDE5512E"
+          },
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "pair_dc920309ed204c9c8b902b448a113d33"
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ _.user }}",
+          "password": "{{ _.password }}"
+        },
+        "metaSortKey": -1600372987094.625,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_8dadb57168f142589078dd34079308fe",
+        "parentId": "fld_f34fb173f4474820b7824adb3b98ff5c",
+        "modified": 1640783505817,
+        "created": 1599177919993,
+        "url": "{{ baseURL }}/convenserver/clientes/{{ _.vendedor }}",
+        "name": "Clientes",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "description": "",
+            "disabled": true,
+            "id": "pair_d81b7bfdfcd9469b979ed54ac5c29eba",
+            "name": "If-None-Match",
+            "value": "A2A740F19541D3E85ECF5A656A384988"
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ _.user }}",
+          "password": "{{ password }}"
+        },
+        "metaSortKey": -1600372987104,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "fld_f34fb173f4474820b7824adb3b98ff5c",
+        "parentId": "wrk_98e220ad58684d84a5f997e378329d17",
+        "modified": 1605526704896,
+        "created": 1605526701670,
+        "name": "Clientes",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1602949703146.5,
+        "_type": "request_group"
+      },
+      {
+        "_id": "req_a08293b753a8406ca159b1baf589e4b1",
+        "parentId": "fld_f34fb173f4474820b7824adb3b98ff5c",
+        "modified": 1615919936926,
+        "created": 1599179859008,
+        "url": "{{ baseURL }}/convenserver/historicofinanceiros/{{ vendedor }}",
+        "name": "Históricos Financeiros",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "name": "",
+            "value": "",
+            "description": "",
+            "id": "pair_ca830a832ce941ef87478245558192aa"
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ user }}",
+          "password": "{{ password }}"
+        },
+        "metaSortKey": -1600372987091.5,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_e4a719691e594a4fa5cf7550e51aa3e2",
+        "parentId": "fld_f34fb173f4474820b7824adb3b98ff5c",
+        "modified": 1616084302580,
+        "created": 1599179920713,
+        "url": "{{ baseURL }}/convenserver/historicocompras/{{ vendedor }}/{{ _.dias }}",
+        "name": "Históricos Compras",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ user }}",
+          "password": "{{ password }}"
+        },
+        "metaSortKey": -1600372987079,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_10f64ad0fe2a4c88b40320127d8acf3b",
+        "parentId": "fld_f34fb173f4474820b7824adb3b98ff5c",
+        "modified": 1640783515649,
+        "created": 1600372987054,
+        "url": "{{ baseURL }}/convenserver/posicoesclientes/{{ vendedor }}/{{ _.empresa }}{{ _.filial }}",
+        "name": "Posição Clientes",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ user }}",
+          "password": "{{ password }}"
+        },
+        "metaSortKey": -1600372987054,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_2e6d9b4d80004ed08dd47f61984774fc",
+        "parentId": "fld_49eb519dd19e4da29195f42b11381dbe",
+        "modified": 1640783499761,
+        "created": 1607604730168,
+        "url": "{{ _.baseURL }}/convenserver/pedido/historico/{{ _.empresa }}/{{ _.filial }}/{{ _.vendedor }}",
+        "name": "Pedidos",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [
+          {
+            "name": "inicio",
+            "value": "01/04/2021",
+            "description": "",
+            "id": "pair_ad84f51d21a841949f9010aa3f61b7c9"
+          },
+          {
+            "name": "fim",
+            "value": "30/04/2021",
+            "description": "",
+            "id": "pair_1f55fd4042234d81812cb075d38f2290"
+          },
+          {
+            "name": "cliente",
+            "value": "",
+            "description": "",
+            "id": "pair_a61430842e20404eb587e98d76e14cc0",
+            "disabled": true
+          }
+        ],
+        "headers": [],
+        "authentication": {
+          "type": "basic",
+          "useISO88591": false,
+          "disabled": false,
+          "username": "{{ _.user }}",
+          "password": "{{ _.password }}"
+        },
+        "metaSortKey": -1607604730168,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "fld_49eb519dd19e4da29195f42b11381dbe",
+        "parentId": "wrk_98e220ad58684d84a5f997e378329d17",
+        "modified": 1616767602035,
+        "created": 1607604171903,
+        "name": "Histórico de Pedido - Online",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1602603864268.0625,
+        "_type": "request_group"
+      },
+      {
+        "_id": "req_b41e35208bae4b338d22119743e21505",
+        "parentId": "fld_49eb519dd19e4da29195f42b11381dbe",
+        "modified": 1618579901588,
+        "created": 1607606100922,
+        "url": "{{ _.baseURL }}/convenserver/pedido/itens/historico/{{ _.empresa }}/{{ _.filial }}/{{ _.vendedor }}/4",
+        "name": "Pedidos Itens",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [],
+        "authentication": {
+          "type": "basic",
+          "useISO88591": false,
+          "disabled": false,
+          "username": "{{ _.user }}",
+          "password": "{{ _.password }}"
+        },
+        "metaSortKey": -1607604730118,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_3f64dfe491d24517bbba157ff90014f1",
+        "parentId": "fld_ac9877a60a8b4ac5bb23f8759a9f3f57",
+        "modified": 1640783490638,
+        "created": 1605539441741,
+        "url": "{{ baseURL }}/convenserver/pedido/{{ vendedor }}",
+        "name": "Pedidos",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ user }}",
+          "password": "{{ password }}"
+        },
+        "metaSortKey": -1605543364187,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "fld_ac9877a60a8b4ac5bb23f8759a9f3f57",
+        "parentId": "wrk_98e220ad58684d84a5f997e378329d17",
+        "modified": 1605527074530,
+        "created": 1605527071477,
+        "name": "Pedido",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1602258025389.625,
+        "_type": "request_group"
+      },
+      {
+        "_id": "req_ecfbb04595cc42609221e76e1022cf60",
+        "parentId": "fld_ac9877a60a8b4ac5bb23f8759a9f3f57",
+        "modified": 1616767311567,
+        "created": 1605543364078,
+        "url": "{{ baseURL }}/convenserver/pedido/itens/{{ vendedor }}",
+        "name": "Pedidos Itens",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ user }}",
+          "password": "{{ password }}"
+        },
+        "metaSortKey": -1605543364137,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_423d678d93cc4855a162c6429a5bf545",
+        "parentId": "fld_ac9877a60a8b4ac5bb23f8759a9f3f57",
+        "modified": 1620070345070,
+        "created": 1605527100137,
+        "url": "{{ baseURL }}/convenserver/pedido/",
+        "name": "Pedido",
+        "description": "",
+        "method": "POST",
+        "body": {
+          "mimeType": "application/json",
+          "text": [
+            {
+              "PDA_EMP": 1,
+              "PDA_FIL": 1,
+              "PDA_VENDEDOR": 23,
+              "PDA_NUMERO": 232,
+              "PDA_DATA": "03/05/2021",
+              "PDA_CLIENTE": 124680,
+              "PDA_EMISSAO": "03/05/2021",
+              "PDA_TOTAL": 7440,
+              "PDA_TABELA": "03/05/2021",
+              "PDA_GERADO": null,
+              "PDA_EMBARQUE": "03/05/2021",
+              "PDA_OBS": "",
+              "PDA_LOCAL_COBRANCA": 28,
+              "PDA_PRAZO_PGTO": 141825,
+              "PDA_INCOMPLETO": "S",
+              "PDA_ATRASO": null,
+              "PDA_BLOQUEIO": null,
+              "PDA_INATIVO": null,
+              "PDA_LIMITE": null,
+              "PDA_ROTA_CID": null,
+              "PDA_ROTA": 0,
+              "PDA_NRENTREGA": "0"
+            }
+          ]
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "pair_a11eab71e3d14aa29221ab543dec4dd9"
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "15",
+          "password": "15"
+        },
+        "metaSortKey": -1605527100137,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_ccae08c93551419d8257a3d304d4ed62",
+        "parentId": "fld_ac9877a60a8b4ac5bb23f8759a9f3f57",
+        "modified": 1620070359034,
+        "created": 1605733288153,
+        "url": "{{ baseURL }}/convenserver/pedido/itens",
+        "name": "Pedido Itens",
+        "description": "",
+        "method": "POST",
+        "body": {
+          "mimeType": "application/json",
+          "text": [
+            {
+              "PDAIT_DATA": "03/05/2021",
+              "PDAIT_NUMERO": 232,
+              "PDAIT_ITEM": 1,
+              "PDAIT_PRODUTO": 5,
+              "PDAIT_QTDE": 350,
+              "PDAIT_UNITARIO": 13.4,
+              "PDAIT_VENDEDOR": 23,
+              "PDAIT_UNIDADE": "KG",
+              "PDAIT_PRECO_LISTA": 13.4,
+              "PDAIT_TOTAL": 4690
+            },
+            {
+              "PDAIT_DATA": "03/05/2021",
+              "PDAIT_NUMERO": 232,
+              "PDAIT_ITEM": 2,
+              "PDAIT_PRODUTO": 6,
+              "PDAIT_QTDE": 50,
+              "PDAIT_UNITARIO": 17,
+              "PDAIT_VENDEDOR": 23,
+              "PDAIT_UNIDADE": "KG",
+              "PDAIT_PRECO_LISTA": 17.24,
+              "PDAIT_TOTAL": 850
+            },
+            {
+              "PDAIT_DATA": "03/05/2021",
+              "PDAIT_NUMERO": 232,
+              "PDAIT_ITEM": 3,
+              "PDAIT_PRODUTO": 13,
+              "PDAIT_QTDE": 50,
+              "PDAIT_UNITARIO": 21.5,
+              "PDAIT_VENDEDOR": 23,
+              "PDAIT_UNIDADE": "KG",
+              "PDAIT_PRECO_LISTA": 22.5,
+              "PDAIT_TOTAL": 1075
+            },
+            {
+              "PDAIT_DATA": "03/05/2021",
+              "PDAIT_NUMERO": 232,
+              "PDAIT_ITEM": 4,
+              "PDAIT_PRODUTO": 108,
+              "PDAIT_QTDE": 50,
+              "PDAIT_UNITARIO": 16.5,
+              "PDAIT_VENDEDOR": 23,
+              "PDAIT_UNIDADE": "KG",
+              "PDAIT_PRECO_LISTA": 16.25,
+              "PDAIT_TOTAL": 825
+            }
+          ]
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "pair_7e12bf3367464783b42c215aea0a3e9d"
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "15",
+          "password": "15"
+        },
+        "metaSortKey": -1605527100087,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_90943d012241459e8d0a1ecfdf600c71",
+        "parentId": "fld_ac9877a60a8b4ac5bb23f8759a9f3f57",
+        "modified": 1618604383249,
+        "created": 1605733475618,
+        "url": "{{ baseURL }}/convenserver/pedido/liberar",
+        "name": "Pedido Liberar",
+        "description": "",
+        "method": "POST",
+        "body": {
+          "mimeType": "application/json",
+          "text": [
+            {
+              "EMPRESA": 1,
+              "FILIAL": 1,
+              "VENDEDOR": 9,
+              "PEDIDO": 5,
+              "DATA": "16/04/2021"
+            }
+          ]
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "pair_eebdaff05bd542ee95b572caece3089c"
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ _.user }}",
+          "password": "{{ _.password }}"
+        },
+        "metaSortKey": -1605527100037,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_7f7bc4d1dc9f436fbf1ca4a7b990c1c3",
+        "parentId": "fld_ac9877a60a8b4ac5bb23f8759a9f3f57",
+        "modified": 1616777106205,
+        "created": 1607602158322,
+        "url": "{{ _.baseURL }}/convenserver/pedido/",
+        "name": "Pedido apagar incompleto",
+        "description": "",
+        "method": "DELETE",
+        "body": {
+          "mimeType": "application/json",
+          "text": {
+            "empresa": "{{ _.empresa }}",
+            "filial": "{{ _.filial }}",
+            "vendedor": "{{ _.vendedor }}",
+            "pedido": 3276,
+            "data": "04/03/2021"
+          }
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "pair_0ebaf6a4edec4dad844dd6c388ddb771"
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "useISO88591": false,
+          "disabled": false,
+          "username": "{{ _.user }}",
+          "password": "{{ _.password }}"
+        },
+        "metaSortKey": -1605527099987,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_b8e15073516a4a6ba45eb8d6e649e09d",
+        "parentId": "fld_c7f3f204cbfa4099a69dbd1d0fa04905",
+        "modified": 1657024410106,
+        "created": 1600182992119,
+        "url": "{{ baseURL }}/convenserver/produtos/estoque/{{ _.empresa }}/{{ _.filial }}/0",
+        "name": "Estoque",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [
+          {
+            "name": "pedido",
+            "value": "0",
+            "description": "",
+            "id": "pair_e755f9c36dcb4b8bb16c0e8fcad6170b",
+            "disabled": true
+          }
+        ],
+        "headers": [],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ _.user }}",
+          "password": "{{ password }}"
+        },
+        "metaSortKey": -1605526931649.5,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "fld_c7f3f204cbfa4099a69dbd1d0fa04905",
+        "parentId": "wrk_98e220ad58684d84a5f997e378329d17",
+        "modified": 1605526872219,
+        "created": 1605526868770,
+        "name": "Produtos / Estoque",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1601566347632.75,
+        "_type": "request_group"
+      },
+      {
+        "_id": "req_dea361a5c4d047958dee28ee8a913a7b",
+        "parentId": "fld_c7f3f204cbfa4099a69dbd1d0fa04905",
+        "modified": 1640783476440,
+        "created": 1605526973972,
+        "url": "{{ baseURL }}/convenserver/produtos/listapreco/{{ _.empresa }}/{{ _.filial }}/'1,1'/0",
+        "name": "Lista de Preço",
+        "description": "",
+        "method": "GET",
+        "body": {
+          "mimeType": "application/json",
+          "text": ""
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "pair_d31211eff82a4537bfc1375390c6ca34"
+          },
+          {
+            "name": "",
+            "value": "",
+            "description": "",
+            "id": "pair_bb45b22e284740c28e7da7ad762302e7"
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ _.user }}",
+          "password": "{{ _.password }}"
+        },
+        "metaSortKey": -1605526931599.5,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_856d9a3238d44194bc9785e620d1f1a2",
+        "parentId": "fld_c7f3f204cbfa4099a69dbd1d0fa04905",
+        "modified": 1640784866933,
+        "created": 1605526889227,
+        "url": "{{ _.baseURL }}/convenserver/produtos/{{ empresa }}/{{ filial }}",
+        "name": "Produtos",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "name": "",
+            "value": "",
+            "description": "",
+            "id": "pair_ba46e3f901014f84a9cae9731ce861ce"
+          }
+        ],
+        "authentication": {
+          "type": "basic",
+          "disabled": false,
+          "username": "{{ user }}",
+          "password": "{{ password }}"
+        },
+        "metaSortKey": -1605526889227,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_c7c2020d14f14e52a53de4afb2777830",
+        "parentId": "wrk_98e220ad58684d84a5f997e378329d17",
+        "modified": 1686317442059,
+        "created": 1599175925713,
+        "url": "http://45.182.166.10:9500/teste",
+        "name": "Testes",
+        "description": "",
+        "method": "GET",
+        "body": {
+          "mimeType": "application/json",
+          "text": {
+            "teste": "teste de log"
+          }
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "id": "pair_d8aeec7ae9c847b4a6ab8be9c562140c",
+            "name": "If-None-Match",
+            "value": "\tEC766D1EF8E61C905197BA79A9E19959"
+          },
+          {
+            "description": "",
+            "id": "pair_4fb06a5cca074d979a4f893cd6a0d458",
+            "name": "",
+            "value": ""
+          },
+          {
+            "name": "Content-Type",
+            "value": "application/json",
+            "id": "pair_64c1e3b497cf405bbee7114bb888db5d"
+          }
+        ],
+        "authentication": {
+          "disabled": false,
+          "password": "120820",
+          "type": "basic",
+          "username": "RESENDE",
+          "useISO88591": true
+        },
+        "metaSortKey": -1599175925713,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "env_400083fe8dbbcc50cdbca70b93106c5a19ddaa44",
+        "parentId": "wrk_98e220ad58684d84a5f997e378329d17",
+        "modified": 1599173990695,
+        "created": 1599173990695,
+        "name": "Base Environment",
+        "data": {},
+        "dataPropertyOrder": null,
+        "color": null,
+        "isPrivate": false,
+        "metaSortKey": 1599173990695,
+        "_type": "environment"
+      },
+      {
+        "_id": "jar_400083fe8dbbcc50cdbca70b93106c5a19ddaa44",
+        "parentId": "wrk_98e220ad58684d84a5f997e378329d17",
+        "modified": 1599173990716,
+        "created": 1599173990716,
+        "name": "Default Jar",
+        "cookies": [],
+        "_type": "cookie_jar"
+      },
+      {
+        "_id": "spc_014c62133308497784f24ae8a0de5e63",
+        "parentId": "wrk_98e220ad58684d84a5f997e378329d17",
+        "modified": 1599173990458,
+        "created": 1599173990458,
+        "fileName": "Conven ",
+        "contents": "",
+        "contentType": "yaml",
+        "_type": "api_spec"
+      },
+      {
+        "_id": "env_bba242eea56e473eb68d6f653a84ea93",
+        "parentId": "env_400083fe8dbbcc50cdbca70b93106c5a19ddaa44",
+        "modified": 1640783222779,
+        "created": 1599173998155,
+        "name": "dev",
+        "data": {
+          "empresa": 1,
+          "filial": 1,
+          "baseURL": "http://127.0.0.1:9500",
+          "user": "RENAN",
+          "password": "100318",
+          "vendedor": 1,
+          "cliente": 375,
+          "dias": 30,
+          "produto": 0
+        },
+        "dataPropertyOrder": {
+          "&": [
+            "empresa",
+            "filial",
+            "baseURL",
+            "user",
+            "password",
+            "vendedor",
+            "cliente",
+            "dias",
+            "produto"
+          ]
+        },
+        "color": "#7d69cb",
+        "isPrivate": false,
+        "metaSortKey": 1,
+        "_type": "environment"
+      },
+      {
+        "_id": "env_3b9efbaf82b74820b9e743a241fec964",
+        "parentId": "env_400083fe8dbbcc50cdbca70b93106c5a19ddaa44",
+        "modified": 1640783226121,
+        "created": 1605789009362,
+        "name": "Granfish",
+        "data": {
+          "empresa": 1,
+          "filial": 1,
+          "baseURL": "http://45.172.21.248:9500",
+          "user": "15",
+          "password": 15,
+          "vendedor": 15,
+          "cliente": 375,
+          "dias": 30,
+          "produto": 0
+        },
+        "dataPropertyOrder": {
+          "&": [
+            "empresa",
+            "filial",
+            "baseURL",
+            "user",
+            "password",
+            "vendedor",
+            "cliente",
+            "dias",
+            "produto"
+          ]
+        },
+        "color": "#67cb8a",
+        "isPrivate": false,
+        "metaSortKey": 2,
+        "_type": "environment"
+      },
+      {
+        "_id": "env_bc963b054ec04689989cc4a76e24996d",
+        "parentId": "env_400083fe8dbbcc50cdbca70b93106c5a19ddaa44",
+        "modified": 1614880433698,
+        "created": 1614878586469,
+        "name": "Sistec Local",
+        "data": {
+          "empresa": 1,
+          "filial": 1,
+          "baseURL": "http://192.168.2.10:9500",
+          "user": "MASTER",
+          "password": "123",
+          "vendedor": 2,
+          "cliente": 113
+        },
+        "dataPropertyOrder": {
+          "&": [
+            "empresa",
+            "filial",
+            "baseURL",
+            "user",
+            "password",
+            "vendedor",
+            "cliente"
+          ]
+        },
+        "color": "#074ced",
+        "isPrivate": false,
+        "metaSortKey": 1614878586469,
+        "_type": "environment"
+      },
+      {
+        "_id": "env_629fecfcc5124d7681ed1a31956a72bf",
+        "parentId": "env_400083fe8dbbcc50cdbca70b93106c5a19ddaa44",
+        "modified": 1616705637541,
+        "created": 1614952948204,
+        "name": "Sistec",
+        "data": {
+          "empresa": 1,
+          "filial": 1,
+          "baseURL": "http://192.168.2.10:9500",
+          "user": "MASTER",
+          "password": "123",
+          "vendedor": "2",
+          "cliente": 375,
+          "dias": 30,
+          "produto": 0
+        },
+        "dataPropertyOrder": {
+          "&": [
+            "empresa",
+            "filial",
+            "baseURL",
+            "user",
+            "password",
+            "vendedor",
+            "cliente",
+            "dias",
+            "produto"
+          ]
+        },
+        "color": "#6797cb",
+        "isPrivate": false,
+        "metaSortKey": 0,
+        "_type": "environment"
+      },
+      {
+        "_id": "env_a8bfcd3cd7134a9eb334f911074ae96e",
+        "parentId": "env_400083fe8dbbcc50cdbca70b93106c5a19ddaa44",
+        "modified": 1640783453406,
+        "created": 1618488032278,
+        "name": "Boi Gordo",
+        "data": {
+          "empresa": 1,
+          "filial": 1,
+          "baseURL": "http://vendasbg.ddns.net:9500",
+          "user": "BOIGORDO",
+          "password": "boi@gordo",
+          "vendedor": 9,
+          "cliente": 375,
+          "dias": 30,
+          "produto": 0
+        },
+        "dataPropertyOrder": {
+          "&": [
+            "empresa",
+            "filial",
+            "baseURL",
+            "user",
+            "password",
+            "vendedor",
+            "cliente",
+            "dias",
+            "produto"
+          ]
+        },
+        "color": "#67cb8a",
+        "isPrivate": false,
+        "metaSortKey": 1618488032278,
+        "_type": "environment"
+      },
+      {
+        "_id": "env_3581a1e726fd40d39b133a6b3c1214ee",
+        "parentId": "env_400083fe8dbbcc50cdbca70b93106c5a19ddaa44",
+        "modified": 1620928779486,
+        "created": 1620907798601,
+        "name": "Fricaire",
+        "data": {
+          "empresa": 1,
+          "filial": 1,
+          "baseURL": "http://170.78.15.253:9500",
+          "user": "RENAN",
+          "password": "100318",
+          "vendedor": 1,
+          "cliente": 375,
+          "dias": 30,
+          "produto": 0
+        },
+        "dataPropertyOrder": {
+          "&": [
+            "empresa",
+            "filial",
+            "baseURL",
+            "user",
+            "password",
+            "vendedor",
+            "cliente",
+            "dias",
+            "produto"
+          ]
+        },
+        "color": "#df1111",
+        "isPrivate": false,
+        "metaSortKey": 1620907798601,
+        "_type": "environment"
+      },
+      {
+        "_id": "env_476db1fe8f2f435392620da6fe630ce6",
+        "parentId": "env_400083fe8dbbcc50cdbca70b93106c5a19ddaa44",
+        "modified": 1640783453893,
+        "created": 1640783234202,
+        "name": "JhonPig",
+        "data": {
+          "empresa": 1,
+          "filial": 1,
+          "baseURL": "http://187.33.200.126:9500",
+          "user": "JOAO",
+          "password": "123",
+          "vendedor": 1,
+          "cliente": 375,
+          "dias": 30,
+          "produto": 0
+        },
+        "dataPropertyOrder": {
+          "&": [
+            "empresa",
+            "filial",
+            "baseURL",
+            "user",
+            "password",
+            "vendedor",
+            "cliente",
+            "dias",
+            "produto"
+          ]
+        },
+        "color": "#6b8dcc",
+        "isPrivate": false,
+        "metaSortKey": 1619697915439.5,
+        "_type": "environment"
+      }
+    ]
+  }
